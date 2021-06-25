@@ -1,8 +1,8 @@
-const MatchSelector = ({matches, onSelectedMatches}) => {
+const MatchSelector = ({matches, onSelectedMatch}) => {
     
     const handleChange = function(evt) {
         const chosenMatch = matches[evt.target.value];
-        onSelectedMatches(chosenMatch)
+        onSelectedMatch(chosenMatch)
     }
 
     const matchOptions = matches.map((match, index) => {
