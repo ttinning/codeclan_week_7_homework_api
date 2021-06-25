@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import MatchSelector from "../components/MatchSelector";
 
 const SportContainer = () => {
     const [matches, setMatches] = useState([]);
+    const[selectedMatches, setSelectedMatches] = useState([]);
 
     useEffect (() => {
         getMatches();
@@ -13,11 +15,14 @@ const SportContainer = () => {
         .then(matches => setMatches(matches))
     }
     console.log(matches.length)
-
-    return(
+    const onSelectedMatches = function(match) {
+        setSelectedMatches(match);
+    }
+    
+    return (
         <div>
-            "I Am The Matches"
-            
+            <h2>I am the matches</h2>
+            <MatchSelector matches={matches} onSelectedMatches={onSelectedMatches}/>
         </div>
     )
 }
