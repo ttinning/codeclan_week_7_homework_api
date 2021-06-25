@@ -4,7 +4,7 @@ import MatchDetail from "../components/MatchDetail";
 
 const SportContainer = () => {
     const [matches, setMatches] = useState([]);
-    const[selectedMatch, setSelectedMatch] = useState([]);
+    const[selectedMatch, setSelectedMatch] = useState(null);
 
     useEffect (() => {
         getMatches();

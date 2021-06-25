@@ -1,10 +1,9 @@
 const MatchDetail = ({match}) => {
 
-    console.log(match.competition)
     return(
         <div>
             <h1>Match</h1>
-            {/* <h2>{match.competition.name}</h2> */}
+            <h2>{match.competition.name}</h2>
             <h2>{match.title}</h2>
             <p>{match.date}</p>
             {/* <h3>{match.side1.name} vs {match.side2.name}</h3> */}
