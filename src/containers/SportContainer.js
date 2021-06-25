@@ -12,7 +12,7 @@ const SportContainer = () => {
     const getMatches = function(){
         fetch('https://www.scorebat.com/video-api/v1/')
         .then(res => res.json())
-        .then(matches => setMatches(matches))
+        .then(matches => setMatches(matches.slice(0, 30)))
     }
     console.log(matches.length)
     const onSelectedMatches = function(match) {

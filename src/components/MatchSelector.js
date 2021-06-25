@@ -11,7 +11,7 @@ const MatchSelector = ({matches, onSelectedMatches}) => {
 
     return (
         <select defaultValue="" onChange={handleChange}>
-            <option value="" selected>Choose Match</option>
+            <option defaultValue="">Choose Match</option>
             {matchOptions}
         </select>
     )
