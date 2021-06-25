@@ -1,4 +1,6 @@
 const MatchDetail = ({match}) => {
+
+    console.log(match.competition)
     return(
         <div>
             <h1>Match</h1>
