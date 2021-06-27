@@ -10,10 +10,12 @@ const MatchSelector = ({matches, onSelectedMatch}) => {
     })
 
     return (
-        <select defaultValue="" onChange={handleChange}>
-            <option defaultValue="">Choose Match</option>
-            {matchOptions}
-        </select>
+        <div id="select">
+            <select defaultValue="" onChange={handleChange}>
+                <option defaultValue="">Choose Match</option>
+                {matchOptions}
+            </select>
+        </div>
     )
 }
 
