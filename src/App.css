@@ -37,4 +37,14 @@ h1 {
   align-items:center;
   justify-content: center;
   font-family: 'Alegreya SC', serif ;
+  padding-top: 10px;
+}
+
+select {
+  border: 2px solid navy;
+  font-family:'Alegreya SC', serif;
+  text-align: center;
+  text-align-last: center;
+  background-color: navy;
+  color:white
 }
